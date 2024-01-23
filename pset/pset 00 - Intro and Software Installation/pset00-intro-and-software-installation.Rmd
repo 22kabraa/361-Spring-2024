@@ -160,6 +160,11 @@ If you have experience with Git/Github, and prefer to use different software or 
 
 Clone the repo, create a new branch and name the branch `Firstname Lastname` your first and last name. Make an edit to the R Markdown file `pset00-GitHub-pull-request-Firstname-Lastname.Rmd` to have your name at the top instead of mine. Commit that to your branch, push those commits to GitHub, and create a pull-request to the `main` branch on the 361-Spring-2024 repo. Make the title of the pull request your first and last name. Do not attempt to approve the pull request, just create it. 
 
+```{r}
+# Done!
+```
+
+
 For help getting started, see <https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/getting-started-with-github-desktop>.
 
 If you find yourself getting too many GitHub notifications, you can go to https://github.com/watching to choose what notifications you get. [This page](https://docs.github.com/en/account-and-profile/managing-subscriptions-and-notifications-on-github/managing-subscriptions-for-activity-on-github/managing-your-subscriptions) has some more info on notifications/subscriptions. 
