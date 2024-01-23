@@ -99,19 +99,23 @@ library(pubtheme)
 #### 5. Check `gganimate`
 
 See https://bmacgtpm.github.io/notes/software-installation.html. The code from that page is below, except a custom title has been added. Replace my name with yours, uncomment the animation code, run all of this code.
-```{r}
-library(gifski)
-library(gganimate)
-```
 
 ```{r}
 # We'll start with a static plot
-g = ggplot(iris, aes(x = Petal.Width, y = Petal.Length)) + geom_point() + ggtitle("Aditya Kabra's animation")
+g = ggplot(iris, 
+           aes(x = Petal.Width, 
+               y = Petal.Length)) + 
+  geom_point() + 
+  ggtitle("Aditya Kabra's animation")
 g
+```
+```{r}
+a = g + 
+  transition_states(Species,
+                    transition_length = 2,
+                    state_length = 1)
 
-a = g + transition_states(Species,transition_length = 2,state_length = 1)
-
-a  ## check that the animation works
+#a  ## check that the animation works
 
 ## save the animation
 anim_save(a, filename = "img/test animations.gif")
